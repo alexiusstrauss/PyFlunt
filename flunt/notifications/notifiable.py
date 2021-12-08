@@ -51,9 +51,7 @@ class Notifiable(Notification):
 
         :return: bool
         """
-        if len(self._notifications) <= 0:
-            return True
-        return False
+        return len(self._notifications) <= 0
 
     def __str__(self):
         """Print object string."""
